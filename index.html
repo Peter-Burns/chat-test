@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat</title>
+    <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <input type='text' id='name'>
+        <button class='btn' id='login'>Login</button>
+        <button class='btn' id='logout'>Logout</button>
+    </header>
+    <div class='container'>
+        <div class='row'>
+            <div class='col s4'>
+                <div class='card blue-grey darken-1'>
+                    <div class='card-content white-text'>
+                        <span class="card-title">Chat</span>
+                        <div id='messages'>
+                            
+                        </div>
+                    </div>
+                    <div class='card-action'>
+                        <form id='messageForm'>
+                            <label for='message'>Message</label><input class='white-text' id='message' type='text'>
+                            <button class='btn' id='submit' type='submit'>Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src='javascript.js'></script>
+</body>
+
+</html>
